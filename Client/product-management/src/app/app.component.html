@@ -1,6 +1,6 @@
 <div class="app-container">
   <h1>Product Management</h1>
-  <!-- Show Logout button if user is logged in and not on the Login page -->
-  <button *ngIf="isLoggedIn() && !isLoginPage()" (click)="logout()">Logout</button>
+  <!-- Logout button styled to be fun and inviting -->
+  <button *ngIf="isLoggedIn() && !isLoginPage()" class="logout-btn" (click)="logout()">Logout</button>
   <router-outlet></router-outlet>
 </div>

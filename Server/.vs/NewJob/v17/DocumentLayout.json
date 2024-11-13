@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\TaskTLV\\Server\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|d:\\tasktlv\\server\\productapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|solutionrelative:productapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0A264B89-5E71-4975-AA9C-0AABD655E69B}|ProductAPI.Tests\\ProductAPI.Tests.csproj|d:\\tasktlv\\server\\productapi.tests\\productservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A264B89-5E71-4975-AA9C-0AABD655E69B}|ProductAPI.Tests\\ProductAPI.Tests.csproj|solutionrelative:productapi.tests\\productservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,6 +43,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "ProductAPI\\appsettings.json",
+              "ToolTip": "D:\\TaskTLV\\Server\\ProductAPI\\appsettings.json",
+              "RelativeToolTip": "ProductAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-13T17:41:46.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ProductServiceTests.cs",
               "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI.Tests\\ProductServiceTests.cs",
               "RelativeDocumentMoniker": "ProductAPI.Tests\\ProductServiceTests.cs",
@@ -51,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ProductDto.cs",
               "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI\\DTOs\\ProductDto.cs",
               "RelativeDocumentMoniker": "ProductAPI\\DTOs\\ProductDto.cs",
@@ -59,12 +76,11 @@
               "RelativeToolTip": "ProductAPI\\DTOs\\ProductDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T16:46:27.585Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T16:46:27.585Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "ProductAPI\\Controllers\\ProductsController.cs",
@@ -72,12 +88,11 @@
               "RelativeToolTip": "ProductAPI\\Controllers\\ProductsController.cs",
               "ViewState": "AQIAAE4AAAAAAAAAAAAAAHMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T16:17:53.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T16:17:53.733Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ProductUpdateDto.cs",
               "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI\\DTOs\\ProductUpdateDto.cs",
               "RelativeDocumentMoniker": "ProductAPI\\DTOs\\ProductUpdateDto.cs",
@@ -85,12 +100,11 @@
               "RelativeToolTip": "ProductAPI\\DTOs\\ProductUpdateDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T16:08:58.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T16:08:58.977Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ProductCreateDto.cs",
               "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI\\DTOs\\ProductCreateDto.cs",
               "RelativeDocumentMoniker": "ProductAPI\\DTOs\\ProductCreateDto.cs",
@@ -98,8 +112,7 @@
               "RelativeToolTip": "ProductAPI\\DTOs\\ProductCreateDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T16:03:40.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T16:03:40.984Z"
             }
           ]
         }

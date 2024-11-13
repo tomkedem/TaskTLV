@@ -310,3 +310,4 @@ D:\TaskTLV\Server\ProductAPI\obj\Debug\net8.0\refint\ProductAPI.dll
 D:\TaskTLV\Server\ProductAPI\obj\Debug\net8.0\ProductAPI.pdb
 D:\TaskTLV\Server\ProductAPI\obj\Debug\net8.0\ProductAPI.genruntimeconfig.cache
 D:\TaskTLV\Server\ProductAPI\obj\Debug\net8.0\ref\ProductAPI.dll
+D:\TaskTLV\Server\ProductAPI\obj\Debug\net8.0\ProductAPI.sourcelink.json

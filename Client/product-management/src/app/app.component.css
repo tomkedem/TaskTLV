@@ -1,0 +1,41 @@
+/* Container styling */
+.app-container {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+  
+  /* Logout button styling */
+  button.logout-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+  }
+  
+  button.logout-btn:hover {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+  }
+  
+  button.logout-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  button.logout-btn::before {
+    content: "🔓";
+    font-size: 18px;
+    margin-right: 8px;
+  }
+  
