@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProductAPI</name>
+    </assembly>
+    <members>
+        <member name="M:ProductAPI.Controllers.AuthController.Login(ProductAPI.DTOs.LoginDto)">
+            <summary>
+            Authenticates the user and generates a JWT token.
+            </summary>
+            <param name="loginDto">The user's login credentials.</param>
+            <returns>Returns a JWT token if authentication is successful; otherwise, returns 401 Unauthorized.</returns>
+        </member>
+        <member name="M:ProductAPI.Controllers.ProductsController.GetProducts">
+            <summary>
+            Retrieves a list of all products.
+            </summary>
+            <returns>Returns all products in the system.</returns>
+        </member>
+        <member name="M:ProductAPI.Controllers.ProductsController.GetProduct(System.Int32)">
+            <summary>
+            Retrieves a product by its ID.
+            </summary>
+            <param name="id">The ID of the product.</param>
+            <returns>Returns the product details if found; otherwise, returns a 404 error.</returns>
+        </member>
+        <member name="M:ProductAPI.Controllers.ProductsController.UpdateProduct(ProductUpdateDto)">
+            <summary>
+            Updates an existing product.
+            </summary>
+            <param name="updatedProductDto">The product details to update.</param>
+            <returns>Returns 204 No Content if the update is successful; otherwise, returns 404 or 500 on error.</returns>
+        </member>
+        <member name="M:ProductAPI.Controllers.ProductsController.AddProduct(ProductCreateDto)">
+            <summary>
+            Adds a new product.
+            </summary>
+            <param name="newProductDto">The product details to add.</param>
+            <returns>Returns 201 Created with the new product's details; otherwise, returns 500 on error.</returns>
+        </member>
+        <member name="M:ProductAPI.Helpers.MiddlewareExtensions.UseCustomExceptionHandling(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Adds custom error handling middleware to log unhandled exceptions.
+            </summary>
+        </member>
+        <member name="T:ProductAPI.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:ProductAPI.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ProductAPI.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ProductAPI.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

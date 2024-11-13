@@ -1,0 +1,28 @@
+<div>
+    <h2>{{ isEditMode ? 'Update Product' : 'Add Product' }}</h2>
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+      
+      <!-- Product Name Field -->
+      <mat-form-field appearance="fill">
+        <mat-label>Product Name</mat-label>
+        <input matInput formControlName="productName" />
+      </mat-form-field>
+      
+      <!-- In Stock Checkbox -->
+      <mat-checkbox formControlName="inStock">In Stock</mat-checkbox>
+    
+      <!-- Arrival Date Field -->
+      <mat-form-field appearance="fill">
+        <mat-label>Arrival Date</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="arrivalDate" />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    
+      <!-- Submit Button -->
+      <button mat-raised-button color="primary" type="submit">
+        {{ isEditMode ? 'Update' : 'Add' }} Product
+      </button>
+    </form>
+  </div>
+  

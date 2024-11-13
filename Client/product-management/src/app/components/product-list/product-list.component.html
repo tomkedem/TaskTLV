@@ -1,0 +1,31 @@
+<div class="product-list-container">
+  <h2>Product List</h2>
+
+  <button *ngIf="isEditor" mat-raised-button color="primary" (click)="navigateToAdd()">Add Product</button>
+
+  <table mat-table [dataSource]="products" class="mat-elevation-z8">
+    <!-- Loop through displayedColumns to create headers and cells dynamically -->
+    <ng-container *ngFor="let column of displayedColumns" [matColumnDef]="column.key">
+      <th mat-header-cell *matHeaderCellDef>{{ column.header }}</th>
+      <td mat-cell *matCellDef="let product">
+        <!-- Check if the column is not 'actions' -->
+        <ng-container *ngIf="column.key !== 'actions'">
+          <div *ngIf="column.pipe === 'date'; else default">
+            {{ product[column.key] | date:'dd/MM/yyyy' }}
+          </div>
+          <ng-template #default>
+            {{ column.format ? column.format(product[column.key]) : product[column.key] }}
+          </ng-template>
+        </ng-container>
+
+        <!-- Check if the column is 'actions' -->
+        <ng-container *ngIf="column.key === 'actions'">
+          <button mat-raised-button color="accent" (click)="navigateToUpdate(product.productId)">Update</button>
+        </ng-container>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="columnKeys"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnKeys;"></tr>
+  </table>
+</div>
