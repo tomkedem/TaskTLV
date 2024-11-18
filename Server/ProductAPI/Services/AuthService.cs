@@ -1,87 +1,79 @@
 ﻿using Microsoft.IdentityModel.Tokens;
-using ProductAPI.Data;
-using ProductAPI.Entities;
 using ProductAPI.Entities.ProductAPI.Entities;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-public class AuthService
+public class AuthService : IAuthService
 {
-    private readonly ApplicationDbContext _context; // Add DbContext for user validation
+    private readonly IUserRepository _userRepository;
     private readonly IConfiguration _config;
 
-    public AuthService(ApplicationDbContext context, IConfiguration config)
+    public AuthService(IUserRepository userRepository, IConfiguration config)
     {
-        _context = context;
+        _userRepository = userRepository;
         _config = config;
     }
-    // Method to authenticate the user
+
+    // Authenticate the user and generate a JWT token if valid
     public string AuthenticateUser(string username, string password)
     {
-        // Check if the user exists in the database
-        var user = _context.Users.SingleOrDefault(u => u.Username == username);
-        if (user == null || !BCrypt.Net.BCrypt.Verify(password, user.Password)) // Verify password
+        // Validate user credentials
+        var user = _userRepository.GetUserByUsername(username);
+        if (user == null || !BCrypt.Net.BCrypt.Verify(password, user.Password))
         {
-            return null; // Return null if invalid credentials
+            return null; // Return null for invalid credentials
         }
 
-        // If credentials are valid, generate a JWT token
+        // Generate JWT token
         return GenerateJwtToken(user);
     }
 
-    // Validate user credentials by checking if the username exists and the password matches
-    public bool ValidateUserCredentials(string username, string password)
+    // Generate JWT Token
+    private string GenerateJwtToken(User user)
     {
-        var user = _context.Users.SingleOrDefault(u => u.Username == username); // Check if the user exists
-        if (user == null)
-            return false;  // Return false if user doesn't exist
+        // Validate JWT configuration
+        string jwtKey = _config["Jwt:Key"];
+        string jwtIssuer = _config["Jwt:Issuer"];
+        string jwtAudience = _config["Jwt:Audience"];
 
-        // Use BCrypt to verify if the entered password matches the hashed password stored in the database
-        return BCrypt.Net.BCrypt.Verify(password, user.Password);  // Verifies password against the hashed password
-    }
-
-    // Generate JWT Token after user authentication
-    public string GenerateJwtToken(User user)
-    {
-        // Ensure JWT configuration is available
-        if (string.IsNullOrEmpty(_config["Jwt:Key"]) ||
-            string.IsNullOrEmpty(_config["Jwt:Issuer"]) ||
-            string.IsNullOrEmpty(_config["Jwt:Audience"]))
+        if (string.IsNullOrEmpty(jwtKey) || string.IsNullOrEmpty(jwtIssuer) || string.IsNullOrEmpty(jwtAudience))
         {
-            throw new InvalidOperationException("JWT configuration is missing.");
+            throw new InvalidOperationException("JWT configuration is missing or invalid.");
         }
 
-        var tokenExpirationHours = _config.GetValue<int>("Jwt:TokenExpirationHours", 1);
+        // Token expiration time
+        int tokenExpirationHours = _config.GetValue<int>("Jwt:TokenExpirationHours", 1);
         var expirationTime = DateTime.UtcNow.AddHours(tokenExpirationHours);
 
-        // Define claims for the token
+        // Claims for the JWT token
         var claims = new[]
         {
             new Claim(JwtRegisteredClaimNames.Sub, user.Username),
             new Claim(ClaimTypes.Role, user.Role),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
         };
 
-        // Create security key using the key from appsettings
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"])); // make sure this key is same as in appsettings.json
-
+        // Create signing credentials
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
-        // Generate JWT token
+        // Create the token
         var token = new JwtSecurityToken(
-            issuer: _config["Jwt:Issuer"],
-            audience: _config["Jwt:Audience"],
+            issuer: jwtIssuer,
+            audience: jwtAudience,
             claims: claims,
-            expires: expirationTime,  // Set expiration time for the token
+            expires: expirationTime,
             signingCredentials: creds
         );
 
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
 
+    // Retrieve the user's role
     public string GetUserRole(string username)
     {
-        var user = _context.Users.SingleOrDefault(u => u.Username == username);
-        return user?.Role;
+        var user = _userRepository.GetUserByUsername(username);
+        return user?.Role ?? "Unknown"; // Return "Unknown" if no role is found
     }
 }

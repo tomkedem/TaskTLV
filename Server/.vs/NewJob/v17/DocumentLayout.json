@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "D:\\TaskTLV\\Server\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|d:\\tasktlv\\server\\productapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|solutionrelative:productapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|d:\\tasktlv\\server\\productapi\\helpers\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|solutionrelative:productapi\\helpers\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|d:\\tasktlv\\server\\productapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|solutionrelative:productapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|d:\\tasktlv\\server\\productapi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|solutionrelative:productapi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|d:\\tasktlv\\server\\productapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|solutionrelative:productapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|d:\\tasktlv\\server\\productapi\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|solutionrelative:productapi\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|d:\\tasktlv\\server\\productapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|solutionrelative:productapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|d:\\tasktlv\\server\\productapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|solutionrelative:productapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -21,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|d:\\tasktlv\\server\\productapi\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|solutionrelative:productapi\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|d:\\tasktlv\\server\\productapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D1BB07E-07D9-48A0-8FC7-B1E26C3FC9EA}|ProductAPI\\ProductAPI.csproj|solutionrelative:productapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,20 +66,69 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "ProductAPI\\Services\\ProductService.cs",
+              "ToolTip": "D:\\TaskTLV\\Server\\ProductAPI\\Services\\ProductService.cs",
+              "RelativeToolTip": "ProductAPI\\Services\\ProductService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T08:06:51.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ProductAPI\\Program.cs",
+              "ToolTip": "D:\\TaskTLV\\Server\\ProductAPI\\Program.cs",
+              "RelativeToolTip": "ProductAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T08:05:11.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI\\Helpers\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "ProductAPI\\Helpers\\ServiceExtensions.cs",
+              "ToolTip": "D:\\TaskTLV\\Server\\ProductAPI\\Helpers\\ServiceExtensions.cs",
+              "RelativeToolTip": "ProductAPI\\Helpers\\ServiceExtensions.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAswBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T07:53:58.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "ProductAPI\\Services\\AuthService.cs",
+              "ToolTip": "D:\\TaskTLV\\Server\\ProductAPI\\Services\\AuthService.cs",
+              "RelativeToolTip": "ProductAPI\\Services\\AuthService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAUwAYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T07:25:27.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI\\appsettings.json",
               "RelativeDocumentMoniker": "ProductAPI\\appsettings.json",
               "ToolTip": "D:\\TaskTLV\\Server\\ProductAPI\\appsettings.json",
               "RelativeToolTip": "ProductAPI\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-13T17:41:46.478Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T17:41:46.478Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "ProductServiceTests.cs",
               "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI.Tests\\ProductServiceTests.cs",
               "RelativeDocumentMoniker": "ProductAPI.Tests\\ProductServiceTests.cs",
@@ -63,12 +136,49 @@
               "RelativeToolTip": "ProductAPI.Tests\\ProductServiceTests.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAQwAsAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T16:51:14.797Z",
+              "WhenOpened": "2024-11-13T16:51:14.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "ProductAPI\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\TaskTLV\\Server\\ProductAPI\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "ProductAPI\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T16:17:53.733Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "ProductAPI\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\TaskTLV\\Server\\ProductAPI\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "ProductAPI\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T08:07:54.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "ProductAPI\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "D:\\TaskTLV\\Server\\ProductAPI\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "ProductAPI\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T08:07:40.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ProductDto.cs",
               "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI\\DTOs\\ProductDto.cs",
               "RelativeDocumentMoniker": "ProductAPI\\DTOs\\ProductDto.cs",
@@ -80,19 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "ProductAPI\\Controllers\\ProductsController.cs",
-              "ToolTip": "D:\\TaskTLV\\Server\\ProductAPI\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "ProductAPI\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAAAHMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T16:17:53.733Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "ProductUpdateDto.cs",
               "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI\\DTOs\\ProductUpdateDto.cs",
               "RelativeDocumentMoniker": "ProductAPI\\DTOs\\ProductUpdateDto.cs",
@@ -104,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "ProductCreateDto.cs",
               "DocumentMoniker": "D:\\TaskTLV\\Server\\ProductAPI\\DTOs\\ProductCreateDto.cs",
               "RelativeDocumentMoniker": "ProductAPI\\DTOs\\ProductCreateDto.cs",

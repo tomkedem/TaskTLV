@@ -24,14 +24,14 @@
             <param name="id">The ID of the product.</param>
             <returns>Returns the product details if found; otherwise, returns a 404 error.</returns>
         </member>
-        <member name="M:ProductAPI.Controllers.ProductsController.UpdateProduct(ProductAPI.DTOs.ProductUpdateDto)">
+        <member name="M:ProductAPI.Controllers.ProductsController.UpdateProduct(ProductUpdateDto)">
             <summary>
             Updates an existing product.
             </summary>
             <param name="updatedProductDto">The product details to update.</param>
             <returns>Returns 204 No Content if the update is successful; otherwise, returns 404 or 500 on error.</returns>
         </member>
-        <member name="M:ProductAPI.Controllers.ProductsController.AddProduct(ProductAPI.DTOs.ProductCreateDto)">
+        <member name="M:ProductAPI.Controllers.ProductsController.AddProduct(ProductCreateDto)">
             <summary>
             Adds a new product.
             </summary>

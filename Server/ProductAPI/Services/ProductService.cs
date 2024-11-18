@@ -1,11 +1,11 @@
 ﻿using ProductAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using ProductAPI.Entities;
-using ProductAPI.DTOs;
+using ProductAPI.Interfaces;
 
 namespace ProductAPI.Services
 {
-    public class ProductService
+    public class ProductService : IProductService
     {
         private readonly ApplicationDbContext _context;
 
@@ -60,7 +60,7 @@ namespace ProductAPI.Services
             if (product == null) return false;
 
             // Update fields selectively
-           
+
             product.InStock = updatedProductDto.InStock;
             product.ArrivalDate = updatedProductDto.ArrivalDate;
 

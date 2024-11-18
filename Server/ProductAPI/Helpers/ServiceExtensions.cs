@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProductAPI.Data;
+using ProductAPI.Interfaces;
 using ProductAPI.Services;
 
 namespace ProductAPI.Helpers
@@ -13,8 +14,9 @@ namespace ProductAPI.Helpers
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
             // Add other services
-            services.AddScoped<AuthService>();
-            services.AddScoped<ProductService>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IProductService, ProductService>();
 
             // Add data seeding
             services.AddTransient<DataSeeder>();
